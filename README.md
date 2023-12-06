@@ -1,7 +1,7 @@
 # QRcodeScannerDecoder
 This QRCODE Decoder used to decode UPC-A and UPC-E EAN-8 and EAN-13 Formate encoding encryption for more advance scanning. This is only for Educational purpose only. Don't use Illegal purpose . Use it own risk
 
-##✅Instruction
+## ✅Instruction
 1. Install pip dependiency
 
 2. Make sure Cam connected properly running Program.
