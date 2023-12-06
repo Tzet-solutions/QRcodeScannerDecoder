@@ -1,0 +1,17 @@
+venv/
+Lib/
+Scripts/
+Include/
+share/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
