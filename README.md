@@ -1,6 +1,13 @@
 # QRcodeScannerDecoder
 This QRCODE Decoder used to decode UPC-A and UPC-E EAN-8 and EAN-13 Formate encoding encryption for more advance scanning. This is only for Educational purpose only. Don't use Illegal purpose . Use it own risk
 
+##✅Instruction
+1. Install pip dependiency
+
+2. Make sure Cam connected properly running Program.
+
+3. Gooood! to GOOOO
+
 ## ⚠️ Caution: Use at Your Own Risk
 
 **This QR Code Scanner with Beep application is provided for educational purposes and as a demonstration of QR code detection capabilities. When using this application, please be aware of the following:**
