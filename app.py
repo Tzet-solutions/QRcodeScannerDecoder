@@ -35,7 +35,6 @@ def capture_and_decode_qr():
             if(rs):
                 print("QR Code Data:",rs.raw )
                 pause_flag = True
-                play_os_based_beep()
                 time.sleep(5)
                 pause_flag = False
             
