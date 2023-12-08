@@ -45,9 +45,7 @@ def capture_and_decode_qr():
         
 
     finally:
-        # Release the camera and close all windows on exit
-        cap.release()
-        cv2.destroyAllWindows()
+        print("done")
 
 
 if __name__ == "__main__":
