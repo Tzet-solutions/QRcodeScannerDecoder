@@ -16,6 +16,7 @@ def play_os_based_beep():
 
 def capture_and_decode_qr():
     # 0 is to the default camera, you can change it 
+    # url = "http://your_mobile_device_ip:8080/video"  
     cap = cv2.VideoCapture(0)
 
     pause_flag = False
@@ -33,7 +34,7 @@ def capture_and_decode_qr():
             rs = rd.decode(filename)
 
             if(rs):
-                print("QR Code Data:",rs.raw )
+                print("QR Code Data:",rs.raw)
                 pause_flag = True
                 time.sleep(5)
                 pause_flag = False
