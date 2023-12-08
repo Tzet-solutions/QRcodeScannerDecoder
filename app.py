@@ -2,7 +2,7 @@ import cv2
 import time
 import platform
 import subprocess
-from pyzbar.pyzbar import decode
+import zxing
 
 def play_os_based_beep():
     system = platform.system().lower()
@@ -27,16 +27,19 @@ def capture_and_decode_qr():
             filename = f"captured_image.jpg"
 
             # save frame-by-frame
-            # cv2.imwrite(filename, frame)
+            cv2.imwrite(filename, frame)
+                
+            rd = zxing.BarCodeReader()   
+            rs = rd.decode(filename)
 
-            decoded_objects = decode("./test.png")
-
-            for obj in decoded_objects:
-                print("QR Code Data:", obj.data.decode('utf-8'), f"\nTIME:{timestamp}\n")
+            if(rs):
+                print("QR Code Data:",rs.raw )
                 pause_flag = True
                 play_os_based_beep()
                 time.sleep(5)
                 pause_flag = False
+            
+
 
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
