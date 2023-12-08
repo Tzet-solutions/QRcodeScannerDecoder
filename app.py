@@ -29,7 +29,7 @@ def capture_and_decode_qr():
             # save frame-by-frame
             # cv2.imwrite(filename, frame)
 
-            decoded_objects = decode("./test.png")
+            decoded_objects = decode(frame)
 
             for obj in decoded_objects:
                 print("QR Code Data:", obj.data.decode('utf-8'), f"\nTIME:{timestamp}\n")
