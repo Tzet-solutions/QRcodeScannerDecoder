@@ -3,6 +3,8 @@ import time
 import platform
 import subprocess
 import zxing
+import subprocess
+
 
 def play_os_based_beep():
     system = platform.system().lower()
@@ -26,9 +28,9 @@ def capture_and_decode_qr():
             ret, frame = cap.read()
             timestamp = time.strftime("%Y-%m-%d_%H:%M:%S")
             filename = f"captured_image.jpg"
-
+	        process = subprocess.Popen("libcamera-jpeg -o capture.jpg",shell=True, stdout=subprocess.PIPE)
+            process.wait()
             # save frame-by-frame
-            cv2.imwrite(filename, frame)
                 
             rd = zxing.BarCodeReader()   
             rs = rd.decode(filename)
